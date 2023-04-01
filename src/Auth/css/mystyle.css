@@ -16,7 +16,7 @@
 
 
     /* #### fonts sizes ##### */
-    --first-H: 7rem;
+    --first-H: 6.5rem;
     --second-H: 5.5rem;
     --third-H: 4rem;
 }
@@ -56,11 +56,17 @@
     font-size: var(--first-H);
     text-transform: capitalize;
 }
+.V-texts p{
+    font-size: 1.8rem!important;
+}
 
 .rating-contents{
     width: 90%;
     margin: 2rem auto;
     /* border: 1px solid red;  */
+}
+.rating-contents .email-box{
+    width: 100%!important;
 }
 .rating-contents .rating{
     width: 75%;
@@ -100,10 +106,11 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     /* border: 1px solid black; */
 }
  .C-img{
-    width: 6rem;
+    width: 5rem;
     height: 5rem;
     border: 2px solid black;
     border-radius: 100%;
@@ -116,9 +123,17 @@
 }
 
 .C-img-box .third-H{
-    width: auto;
+    width: 85%;
     padding-left: 2em;
-    /* border: 1px solid green; */
+}
+.C-img-box .third-H::after{
+    content: "rosa ings";
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-gray);
+    text-transform: capitalize;
+    margin-top: 0.7rem;
 }
 .third-H h3{
     font-size: 2.2rem;
@@ -188,11 +203,10 @@
 }
 .text-img{
     width: 80%; 
-    margin: auto;
     text-align: center;
-    padding-top: 15em!important;
-    border: 1px solid red;
+    padding-top: 8em;
     position: relative;
+    /* border: 1px solid red; */
 }
 .second-H{
     font-size: 3.2rem!important;
@@ -437,10 +451,6 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     .five-s{
         margin: 0rem 1.5rem!important;
     }
-    .C-img-box .C-img{
-        width: 10rem!important;
-        height: 7rem;
-    }
     .third-H h3{ 
         letter-spacing: 0px;
     }
@@ -474,9 +484,12 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 
 
     /* ######## bg-color ############ */
+    .bg-color{
+        height: fit-content!important;
+    }
     .text-img{
         width: 100%;
-        padding-top: 5em!important;
+        padding: 5em 0em;
     }
     .text-img .heading{
         margin: 0rem auto 3rem auto;
@@ -485,6 +498,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         font-size: 2.3rem;
     }
 
+    .text-img p{
+        bottom: 25%;
+    }
     /* ######## questions styling ########## */
     .texts-box{
         width: 90%;
@@ -501,7 +517,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 90%;
         height: fit-content;
     }
-    .client-pics{
+   .ClientList .client-pics{
         width: 100%!important;
         margin: 0rem auto 2rem auto!important;
     }
@@ -509,7 +525,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         margin: 1rem!important;
     }
     .custom-shape-divider-top-1679998476{
-        position: sticky!important;
+        position: static!important;
         width: 100%;
     }
     .custom-shape-divider-top-1679998476 svg{
@@ -570,10 +586,6 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     .five-s{
         margin: 0rem 1.5rem;
     }
-    .C-img-box .C-img{
-        width: 10rem!important;
-        height: 7rem;
-    }
     .third-H h3{ 
         letter-spacing: 0px;
     }
@@ -610,11 +622,11 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 
     /* ######## bg-color ############ */
     .bg-color{
-        height: 65vh!important;
+        height: fit-content!important;
     }
     .text-img{
         width: 100%;
-        padding-top: 5em!important;
+        padding: 5em 0em;
     }
     .text-img .heading{
         margin: 0rem auto 3rem auto;
@@ -623,6 +635,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         font-size: 2.3rem;
     }
 
+    .text-img p{
+        bottom: 25%;
+    }
     /* ######## question box styling ########## */
     .texts-box{
         width: 90%;
@@ -634,7 +649,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 90%;
         height: fit-content;
     }
-    .client-pics{
+    .ClientList .client-pics{
         width: 100%!important;
         margin: 0rem auto 2rem auto!important;
     }
@@ -645,7 +660,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         height: 35vh!important;
     }
     .custom-shape-divider-top-1679998476{
-        position: sticky!important;
+        position: static!important;
         width: 100%;
     }
     .custom-shape-divider-top-1679998476 svg{
@@ -678,7 +693,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 
 @media screen and (min-width: 601px) and (max-width: 968px) {
     .logo-box::after{
-        top: 620px!important;
+        top: 700px!important;
         width: 85%;
         height: 250px!important;
     }
@@ -692,8 +707,8 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 100%;
         margin: auto;
     }
-    .email-box{
-        width: 60%!important;
+   .rating-contents .email-box{
+        width: 65%!important;
         margin: 2rem 0rem;
     }
     .rating-contents .rating{
@@ -740,19 +755,22 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 
     /* ######## bg-color ############ */
     .bg-color{
-        height: 65vh!important;
+        height: fit-content!important;
     }
     .text-img{
         width: 100%;
-        padding-top: 5em!important;
+        padding: 5em 0em;
     }
     .text-img .heading{
-        margin: 0rem auto 3rem auto;
+        margin: 0rem auto 3rem auto
     }
     .heading h2{
         font-size: 2.3rem;
     }
 
+    .text-img p{
+        bottom: 30%;
+    }
     /* ######## question box styling ########## */
     .texts-box{
         width: 90%;
@@ -767,8 +785,8 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 90%;
         height: fit-content;
     }
-    .client-pics{
-        width: 100%!important;
+    .ClientList .client-pics{
+        width: 95%!important;
         margin: 0rem auto 2rem auto!important;
     }
     .client-pics .C-pic-box{
@@ -778,7 +796,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         height: 35vh!important;
     }
     .custom-shape-divider-top-1679998476{
-        position: sticky!important;
+        position: static!important;
         width: 100%;
     }
     .custom-shape-divider-top-1679998476 svg{
@@ -791,13 +809,16 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         letter-spacing: 0px;
     }
     .ClientList .email-box{
-
+        width: 75%!important;
         margin: 0rem auto!important;
     }
 
     /* ####### footer-section ############### */
     .social{
         width: 30%;
+    }
+    .footer-section .email-box{
+        width: 75%!important;
     }
 }
 
@@ -824,18 +845,14 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     .five-s{
         margin: 0rem 1.5rem;
     }
-    .C-img-box .C-img{
-        width: 7rem!important;
-        height: 7rem;
-    }
 
     /* ######## bg-color ############ */
     .bg-color{
-        height: 65vh!important;
+        height: fit-content!important;
     }
     .text-img{
         width: 100%;
-        padding-top: 5em!important;
+        padding: 5em 0em!important;
     }
     .text-img .heading{
         margin: 0rem auto 3rem auto;
@@ -844,6 +861,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         font-size: 2.3rem;
     }
 
+    .text-img p{
+        bottom: 30%;
+    }
 
     /* ######## question box styling ########## */
     .texts-box{
@@ -854,7 +874,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     /* ######## ClientList ######### */
     .ClientList{
         width: 90%;
-        height: fit-content;
+        height: fit-content!important;
     }
     .ClientList h1{
         font-size: 4rem;
@@ -873,7 +893,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         height: fit-content!important;
     }
     .custom-shape-divider-top-1679998476{
-        position: sticky!important;
+        position: static!important;
         width: 100%;
     }
 
@@ -891,10 +911,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     }
 }
 
-
 @media screen and (min-width: 1201px){
     .main-contents{
-        height: fit-content;
+        height: fit-content
     }
     .logo-box::after{
         top: 150px!important;
@@ -913,18 +932,15 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     .five-s{
         margin: 0rem 1.5rem;
     }
-    .C-img-box .C-img{
-        width: 7rem!important;
-        height: 7rem;
-    }
 
     /* ######## bg-color ############ */
     .bg-color{
         height: fit-content!important;
     }
-    .text-img{
-        width: 100%;
-        padding-top: 5em!important;
+
+    .bg-color .text-img {
+        margin: auto;
+        padding: 5em 0em!important;
     }
     .text-img .heading{
         margin: 0rem auto 3rem auto;
@@ -933,18 +949,27 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         font-size: 2.3rem;
     }
 
-    .text-img .C-img{
-        margin: 3rem auto!important;
+    .text-img p{
+        bottom: 30%;
     }
 
     /* ######## ClientList ######### */
     .ClientList{
-        border: 1px solid green;
+        height: fit-content!important;
     }
     .ClientList .email-box{
         width: 45%!important;
     }
 
+
+
+    .divider-shape{
+        height: fit-content!important;
+    }
+
+    .custom-shape-divider-top-1679998476{
+        position: static!important;
+    }
 
     .footer-section{
         height: fit-content;
@@ -954,3 +979,4 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 40%!important;
     }
 }
+
