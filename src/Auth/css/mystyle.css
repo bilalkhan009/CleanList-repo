@@ -1,0 +1,956 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+ html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    
+    --text-gray: gray;
+
+
+
+    /* #### fonts sizes ##### */
+    --first-H: 7rem;
+    --second-H: 5.5rem;
+    --third-H: 4rem;
+}
+
+/* ############ main-section ############# */
+.logo-box{
+    padding-top: 5em;
+    position: relative;
+}
+.logo-box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    height: 400px;
+    background-image: url(./../../assessts/dots.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.1;
+    border-radius: 1em;
+}
+.logo-box .logo{
+    width: 5.5rem;
+    height: 5.5rem;
+    background-image: url(./../../assessts/logo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 5rem;
+    border-radius: 50%;
+}
+.V-texts .first-H{
+    font-size: var(--first-H);
+    text-transform: capitalize;
+}
+
+.rating-contents{
+    width: 90%;
+    margin: 2rem auto;
+    /* border: 1px solid red;  */
+}
+.rating-contents .rating{
+    width: 75%;
+    height: 5rem;
+    margin: 1.5rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.F-stars{
+    height: fit-content;
+    padding: 0.8em 0em;
+}
+.F-stars .star{
+    display: inline-block;
+   width: 2.5rem;
+   height: 2.5rem; 
+   background-image: url(./../../assessts/favourites.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 50%;
+}
+.rating .five-s{
+    font-size: 1.2rem;
+    margin: 0rem 2rem;
+    padding: 0.8em 1.5em;
+    color: var(--text-gray);
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.rating-contents .C-img-box{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+ .C-img{
+    width: 6rem;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+.C-img img{
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 100%;
+}
+
+.C-img-box .third-H{
+    width: auto;
+    padding-left: 2em;
+    /* border: 1px solid green; */
+}
+.third-H h3{
+    font-size: 2.2rem;
+    letter-spacing: -2px;
+}
+/* ######## email-filter stylying ######### */
+.main-contents{
+    height: 85vh;
+    /* border: 1px solid black; */
+}
+
+.align-contents{
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid green; */
+}
+.box{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.img{
+    width: 100%;
+    height: fit-content;
+    margin: 5rem auto 2rem auto;
+    /* border: 1px solid red; */
+}
+.img img{
+    display: block; 
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.text-para{
+    width: 100%;
+    height: fit-content;
+    margin: 2rem auto 0rem auto;
+    padding: 0em 3em;
+    /* border: 1px solid black; */
+}
+
+.text-para h1{
+    font-size: var(--third-H);
+    letter-spacing: -2px;
+}
+.text-para p{
+    font-size: 2.1rem;
+    color: var(--text-gray);
+    padding-top: 0.4em;
+    line-height: 3rem;
+    word-spacing: 2px;
+}
+.text-para span{
+    text-transform: uppercase;
+}
+
+.bg-color p{
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 10%;
+}
+.text-img{
+    width: 80%; 
+    margin: auto;
+    text-align: center;
+    padding-top: 15em!important;
+    border: 1px solid red;
+    position: relative;
+}
+.second-H{
+    font-size: 3.2rem!important;
+    text-align: center;
+    color: white;
+}
+.heading{
+    margin: 0rem auto 5rem auto;
+}
+
+
+/* ########## questions-box styling ######### */
+.questions-box h2{
+    color: black;
+    font-size: var(--third-H);
+}
+.texts-box{
+    width: 58%;
+    margin: 3rem auto;
+    padding-top: 2em;
+    /* border: 1px solid red; */
+}
+.texts-box .text-para{
+    width: 100%;
+    margin: 1.5rem 0%;
+    padding: 3em 0em;
+    border-top: 2px solid rgb(232, 232, 232);
+    border-bottom: 2px solid rgb(233, 232, 232);
+}
+.text-para > h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.texts-box p{
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+
+
+/* ########## users-pics styling ########### */
+.ClientList{
+    max-width: 1450px;
+    width: 100%;
+    height: 100vh;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+.ClientList .client-pics{
+    width: 65%!important;
+    height: fit-content;
+    margin: 3rem 0rem!important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+.client-pics .C-pic-box{
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    margin: 1rem 2rem;
+    /* border: 2px solid black; */
+}
+.C-pic-box img{
+    display: block;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.ClientList h1{
+    font-size: var(--second-H);
+    word-spacing: -2px;
+    letter-spacing: -2px;
+}
+.divider-shape{
+    width: 100%;
+    height: 45vh;
+    margin: 3rem auto 0rem auto;
+    position: relative;
+    background: rgb(149,149,149);
+    background: linear-gradient(90deg, rgba(180, 180, 180, 0.827) 28%, rgba(218, 219, 221, 0.645) 100%);
+}
+
+.divider-shape .custom-shape-divider-top-1679998476 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1679998476 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 183px;
+}
+
+.custom-shape-divider-top-1679998476 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.divider-shape .email-box{
+    width: 45%;
+    height: fit-content;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+}
+.email-box input{
+    display: inline-block;
+    width: 78%;
+    padding: 1.2em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    font-size: 1.7rem;
+}
+.email-box .submit-btn{
+    display: inline-block;
+    width: 18%;
+    height: 4.5rem;
+    background-color: black;
+    color: white;
+    margin-left: 1rem;
+    padding: 0.5em;
+    font-size: 1.8rem;
+    border: 0px;
+    border-radius: 5px;
+    transition: all 600ms ease-in-out;
+}
+.email-box .submit-btn:hover{
+    background-color: gray;
+}
+
+
+.footer-section{
+    height: fit-content;
+    margin: 7rem auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+.social{
+    width: 20%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social .icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0rem 1.5rem;
+    padding: 0.3em;
+    /* background-color: lightgray; */
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.17); */
+}
+.icon .fa-brands{
+    color: gray;
+}
+.icon .fa-brands:hover{
+    color: red;
+}
+
+.contents .email-box{
+    width: 45%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.email-box .F-email{
+    width: 75%!important;
+}
+.contents .submit-btn{
+    width: 23%;
+    margin: 0rem auto auto 0.6rem; 
+}
+.contents p{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+/* ######### utility classes ######### */
+.container{
+    max-width: 1450px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+.bg-color{
+    background-color: #17333d;
+opacity: 0.8;
+background: radial-gradient(circle, transparent 20%, #17333d 20%, #17333d 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #17333d 20%, #17333d 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#060606 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #060606 2px, #17333d 2px) -1px 0;
+background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+    html{
+        font-size: 50%;
+    }
+
+    /* ############ main-section ############# */
+    .text-box{
+        width: 95%!important;
+    }
+    .V-texts .first-H{
+        font-size: 3.3rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .logo-box::after{
+        top: 470px!important;
+        width: 95%;
+        height: 250px!important;
+    }
+
+    .logo-box .logo{
+        margin: 3rem 2rem;
+    }
+    .rating-contents{
+        width: 100%;
+    }
+    .rating-contents .rating{
+        width: 100%;
+    }
+    .five-s{
+        margin: 0rem 1.5rem!important;
+    }
+    .C-img-box .C-img{
+        width: 10rem!important;
+        height: 7rem;
+    }
+    .third-H h3{ 
+        letter-spacing: 0px;
+    }
+
+    .text-box{
+        orphans: 2;
+    }
+    .text-para h1{
+        font-size: 3.5rem;
+    }
+    .img-box{
+        margin-top: 0%!important;
+        order: 5;
+    }
+    .main-contents{
+        height: fit-content;
+    }
+    .align-contents{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90%;
+    }
+    .text-para{
+        width: 100%;
+        padding: 0em 1em!important;
+    }
+
+
+
+
+    /* ######## bg-color ############ */
+    .text-img{
+        width: 100%;
+        padding-top: 5em!important;
+    }
+    .text-img .heading{
+        margin: 0rem auto 3rem auto;
+    }
+    .heading h2{
+        font-size: 2.3rem;
+    }
+
+    /* ######## questions styling ########## */
+    .texts-box{
+        width: 90%;
+        margin: auto;
+    }
+
+    .texts-box .text-para{
+        padding: 3em 0rem!important;
+    }
+
+
+    /* ######## ClientList ######### */
+    .ClientList{
+        width: 90%;
+        height: fit-content;
+    }
+    .client-pics{
+        width: 100%!important;
+        margin: 0rem auto 2rem auto!important;
+    }
+    .client-pics .C-pic-box{
+        margin: 1rem!important;
+    }
+    .custom-shape-divider-top-1679998476{
+        position: sticky!important;
+        width: 100%;
+    }
+    .custom-shape-divider-top-1679998476 svg{
+        height: 100px!important;
+    }
+
+    .ClientList h1{
+        font-size: 3rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .email-box{
+        width: 95%!important;
+    }
+    .email-box input{
+        padding: 0.9em;
+        width: 75%;
+    }
+    .email-box .submit-btn{
+        width: 22%;
+        margin-left: 5px;
+    }
+
+    /* ####### footer-section ########## */
+    .social{
+        width: 70%;
+    }
+}
+
+
+
+@media screen and (min-width: 361px) and (max-width: 600px) {
+    html{
+        font-size: 55%;
+    }
+
+    /* ############ main-section ############# */
+    .V-texts .first-H{
+        font-size: 3.3rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .logo-box::after{
+        top: 470px!important;
+        width: 95%;
+        height: 250px!important;
+    }
+
+    .logo-box .logo{
+        margin: 3rem 0rem 2rem 6rem;
+    }
+    .rating-contents{
+        width: 100%;
+    }
+    .rating-contents .rating{
+        width: 100%;
+    }
+    .five-s{
+        margin: 0rem 1.5rem;
+    }
+    .C-img-box .C-img{
+        width: 10rem!important;
+        height: 7rem;
+    }
+    .third-H h3{ 
+        letter-spacing: 0px;
+    }
+
+    .V-texts{
+        order: 2;
+    }
+    .V-texts .text-para{
+        padding: 0em!important;
+    }
+    .text-para h1{
+        font-size: 3.5rem;
+    }
+    .img-box{
+        margin-top: 0%!important;
+        order: 5;
+    }
+    .main-contents{
+        height: fit-content;
+    }
+    .align-contents{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90%;
+    }
+    .text-para{
+        width: 100%;
+        padding: 0em 1em;
+    }
+
+
+
+    /* ######## bg-color ############ */
+    .bg-color{
+        height: 65vh!important;
+    }
+    .text-img{
+        width: 100%;
+        padding-top: 5em!important;
+    }
+    .text-img .heading{
+        margin: 0rem auto 3rem auto;
+    }
+    .heading h2{
+        font-size: 2.3rem;
+    }
+
+    /* ######## question box styling ########## */
+    .texts-box{
+        width: 90%;
+        margin: auto;
+    }
+
+    /* ######## ClientList ######### */
+    .ClientList{
+        width: 90%;
+        height: fit-content;
+    }
+    .client-pics{
+        width: 100%!important;
+        margin: 0rem auto 2rem auto!important;
+    }
+    .client-pics .C-pic-box{
+        margin: 1rem!important;
+    }
+    .divider-shape{
+        height: 35vh!important;
+    }
+    .custom-shape-divider-top-1679998476{
+        position: sticky!important;
+        width: 100%;
+    }
+    .custom-shape-divider-top-1679998476 svg{
+        height: 100px!important;
+    }
+
+    .ClientList h1{
+        font-size: 3rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .email-box{
+        width: 95%!important;
+    }
+    .email-box input{
+        padding: 0.9em;
+        width: 75%;
+    }
+    .email-box .submit-btn{
+        width: 22%;
+        margin-left: 5px;
+    }
+
+
+    /* ####### footer-section ########## */
+    .social{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 968px) {
+    .logo-box::after{
+        top: 620px!important;
+        width: 85%;
+        height: 250px!important;
+    }
+    .logo{
+        width: 7rem!important;
+        height: 7rem!important;
+        margin: 3rem 2rem!important;
+    }
+    
+    .rating-contents{
+        width: 100%;
+        margin: auto;
+    }
+    .email-box{
+        width: 60%!important;
+        margin: 2rem 0rem;
+    }
+    .rating-contents .rating{
+        width: 100%;
+    }
+    .five-s{
+        margin: 0rem 1.5rem;
+    }
+    .C-img-box .C-img{
+        width: 7rem!important;
+        height: 7rem;
+    }
+    .third-H h3{ 
+        letter-spacing: 0px;
+    }
+
+    .V-texts{
+        order: 2;
+        width: 95%!important;
+    }
+    .V-texts .text-para{
+        margin: 0rem;
+        padding: 0em!important;
+    }
+    .img-box{
+        margin-top: 0%!important;
+        order: 5;
+    }
+    .main-contents{
+        height: fit-content;
+    }
+    .align-contents{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90%;
+    }
+    .text-para{
+        width: 90%;
+    }
+
+
+
+    /* ######## bg-color ############ */
+    .bg-color{
+        height: 65vh!important;
+    }
+    .text-img{
+        width: 100%;
+        padding-top: 5em!important;
+    }
+    .text-img .heading{
+        margin: 0rem auto 3rem auto;
+    }
+    .heading h2{
+        font-size: 2.3rem;
+    }
+
+    /* ######## question box styling ########## */
+    .texts-box{
+        width: 90%;
+        margin: auto;
+    }
+    .text-box .text-para{
+        padding: 0em!important;
+    }
+
+    /* ######## ClientList ######### */
+    .ClientList{
+        width: 90%;
+        height: fit-content;
+    }
+    .client-pics{
+        width: 100%!important;
+        margin: 0rem auto 2rem auto!important;
+    }
+    .client-pics .C-pic-box{
+        margin: 1rem!important;
+    }
+    .divider-shape{
+        height: 35vh!important;
+    }
+    .custom-shape-divider-top-1679998476{
+        position: sticky!important;
+        width: 100%;
+    }
+    .custom-shape-divider-top-1679998476 svg{
+        height: 100px!important;
+    }
+
+    .ClientList h1{
+        font-size: 3rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+    .ClientList .email-box{
+
+        margin: 0rem auto!important;
+    }
+
+    /* ####### footer-section ############### */
+    .social{
+        width: 30%;
+    }
+}
+
+
+@media screen and (min-width: 969px) and (max-width: 1200px) {
+    .main-contents{
+        height: fit-content;
+    }
+    .logo-box::after{
+        top: 150px!important;
+    }
+
+    .rating-contents{
+        width: 90%;
+        margin: auto;
+    }
+    .email-box{
+        width: 90%!important;
+        margin: 2rem 0rem;
+    }
+    .rating-contents .rating{
+        width: 100%;
+    }
+    .five-s{
+        margin: 0rem 1.5rem;
+    }
+    .C-img-box .C-img{
+        width: 7rem!important;
+        height: 7rem;
+    }
+
+    /* ######## bg-color ############ */
+    .bg-color{
+        height: 65vh!important;
+    }
+    .text-img{
+        width: 100%;
+        padding-top: 5em!important;
+    }
+    .text-img .heading{
+        margin: 0rem auto 3rem auto;
+    }
+    .heading h2{
+        font-size: 2.3rem;
+    }
+
+
+    /* ######## question box styling ########## */
+    .texts-box{
+        width: 75%;
+        margin: auto;
+    }
+
+    /* ######## ClientList ######### */
+    .ClientList{
+        width: 90%;
+        height: fit-content;
+    }
+    .ClientList h1{
+        font-size: 4rem;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+
+    .client-pics{
+        width: 100%!important;
+        margin: 0rem auto 2rem auto!important;
+    }
+    .client-pics .C-pic-box{
+        margin: 1rem!important;
+    }
+    .divider-shape{
+        height: fit-content!important;
+    }
+    .custom-shape-divider-top-1679998476{
+        position: sticky!important;
+        width: 100%;
+    }
+
+    .ClientList .email-box{
+        width: 55%!important;
+    }
+
+
+    .footer-section{
+        height: fit-content;
+    }
+
+    .footer-section .email-box{
+        width: 50%!important;
+    }
+}
+
+
+@media screen and (min-width: 1201px){
+    .main-contents{
+        height: fit-content;
+    }
+    .logo-box::after{
+        top: 150px!important;
+    }
+    .rating-contents{
+        width: 90%;
+        margin: auto;
+    }
+    .email-box{
+        width: 90%!important;
+        margin: 2rem 0rem;
+    }
+    .rating-contents .rating{
+        width: 100%;
+    }
+    .five-s{
+        margin: 0rem 1.5rem;
+    }
+    .C-img-box .C-img{
+        width: 7rem!important;
+        height: 7rem;
+    }
+
+    /* ######## bg-color ############ */
+    .bg-color{
+        height: fit-content!important;
+    }
+    .text-img{
+        width: 100%;
+        padding-top: 5em!important;
+    }
+    .text-img .heading{
+        margin: 0rem auto 3rem auto;
+    }
+    .heading h2{
+        font-size: 2.3rem;
+    }
+
+    .text-img .C-img{
+        margin: 3rem auto!important;
+    }
+
+    /* ######## ClientList ######### */
+    .ClientList{
+        border: 1px solid green;
+    }
+    .ClientList .email-box{
+        width: 45%!important;
+    }
+
+
+    .footer-section{
+        height: fit-content;
+    }
+
+    .footer-section .email-box{
+        width: 40%!important;
+    }
+}
