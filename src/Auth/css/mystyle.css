@@ -162,7 +162,6 @@
     width: 100%;
     height: fit-content;
     margin: 5rem auto 2rem auto;
-    /* border: 1px solid red; */
 }
 .img img{
     display: block; 
@@ -407,6 +406,10 @@ input::placeholder{
     margin: auto;
     /* border: 1px solid black; */
 }
+.content{
+    height: 85vh;
+    /* border: 1px solid black; */
+}
 .bg-color{
     background-color: #17333d;
 opacity: 0.8;
@@ -470,6 +473,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     }
     .align-contents{
         flex-direction: column;
+    }
+    .content{
+        height: fit-content;
     }
 
     .box{
@@ -606,6 +612,10 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     .main-contents{
         height: fit-content;
     }
+
+    .content{
+        height: fit-content;
+    }
     .align-contents{
         flex-direction: column;
     }
@@ -740,6 +750,10 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     .main-contents{
         height: fit-content;
     }
+
+    .content{
+        height: fit-content;
+    }
     .align-contents{
         flex-direction: column;
     }
@@ -825,6 +839,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 
 @media screen and (min-width: 969px) and (max-width: 1200px) {
     .main-contents{
+        height: fit-content;
+    }
+    .content{
         height: fit-content;
     }
     .logo-box::after{
@@ -914,6 +931,9 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 @media screen and (min-width: 1201px){
     .main-contents{
         height: fit-content
+    }
+    .content{
+        height: fit-content;
     }
     .logo-box::after{
         top: 150px!important;
