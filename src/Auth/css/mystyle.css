@@ -8,7 +8,6 @@
 
  html{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     
     --text-gray: gray;
@@ -20,11 +19,17 @@
     --second-H: 5.5rem;
     --third-H: 4rem;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* ############ main-section ############# */
 .logo-box{
     padding-top: 5em;
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid green; */
 }
 .logo-box::after{
     content: "";
@@ -49,8 +54,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin-left: 5rem;
+    margin-left: 3.5rem;
     border-radius: 50%;
+}
+.logo-box h3{
+    font-size: 3rem;
+    margin-left: 1rem;
 }
 .V-texts .first-H{
     font-size: var(--first-H);
@@ -67,6 +76,9 @@
 }
 .rating-contents .email-box{
     width: 100%!important;
+}
+::placeholder{
+    font-size: 1.8rem!important;
 }
 .rating-contents .rating{
     width: 75%;
@@ -137,21 +149,32 @@
 }
 .third-H h3{
     font-size: 2.2rem;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 /* ######## email-filter stylying ######### */
 .main-contents{
+    max-width: 1450px;
+    width: 100%;
+    margin: auto;
     height: 85vh;
     /* border: 1px solid black; */
 }
 
 .align-contents{
+    max-width: 1450px;
+    width: 100%;
+    margin: auto;
     height: fit-content;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     /* border: 1px solid green; */
+}
+.content{
+    max-width: 1450px;
+    width: 100%;
+    margin: auto;
 }
 .box{
     width: 50%;
@@ -203,6 +226,7 @@
 .text-img{
     width: 80%; 
     text-align: center;
+    margin: auto;
     padding-top: 8em;
     position: relative;
     /* border: 1px solid red; */
@@ -218,12 +242,17 @@
 
 
 /* ########## questions-box styling ######### */
+.questions-box{
+    max-width: 1450px;
+    width: 57%;
+    margin: auto;
+}
 .questions-box h2{
     color: black;
     font-size: var(--third-H);
 }
 .texts-box{
-    width: 58%;
+    width: 100%;
     margin: 3rem auto;
     padding-top: 2em;
     /* border: 1px solid red; */
@@ -249,7 +278,7 @@
 /* ########## users-pics styling ########### */
 .ClientList{
     max-width: 1450px;
-    width: 100%;
+    width: 95%;
     height: 100vh;
     margin: 2rem auto;
     display: flex;
@@ -332,10 +361,6 @@
     border: 1px solid gray;
     border-radius: 5px;
 }
-
-input::placeholder{
-    font-size: 1.7rem;
-}
 .email-box .submit-btn{
     display: inline-block;
     width: 18%;
@@ -350,6 +375,7 @@ input::placeholder{
     transition: all 600ms ease-in-out;
 }
 .email-box .submit-btn:hover{
+    cursor: pointer;
     background-color: gray;
 }
 
@@ -508,9 +534,8 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         bottom: 25%;
     }
     /* ######## questions styling ########## */
-    .texts-box{
-        width: 90%;
-        margin: auto;
+    .questions-box{
+        width: 80%;
     }
 
     .texts-box .text-para{
@@ -649,9 +674,8 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         bottom: 25%;
     }
     /* ######## question box styling ########## */
-    .texts-box{
-        width: 90%;
-        margin: auto;
+    .questions-box{
+        width: 80%;
     }
 
     /* ######## ClientList ######### */
@@ -786,9 +810,8 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         bottom: 30%;
     }
     /* ######## question box styling ########## */
-    .texts-box{
-        width: 90%;
-        margin: auto;
+    .questions-box{
+        width: 80%;
     }
     .text-box .text-para{
         padding: 0em!important;
@@ -837,7 +860,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 
-@media screen and (min-width: 969px) and (max-width: 1200px) {
+@media screen and (min-width: 969px) and (max-width: 1300px) {
     .main-contents{
         height: fit-content;
     }
@@ -883,9 +906,8 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     }
 
     /* ######## question box styling ########## */
-    .texts-box{
-        width: 75%;
-        margin: auto;
+    .questions-box{
+        width: 70%;
     }
 
     /* ######## ClientList ######### */
@@ -927,76 +949,3 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 50%!important;
     }
 }
-
-@media screen and (min-width: 1201px){
-    .main-contents{
-        height: fit-content
-    }
-    .content{
-        height: fit-content;
-    }
-    .logo-box::after{
-        top: 150px!important;
-    }
-    .rating-contents{
-        width: 90%;
-        margin: auto;
-    }
-    .email-box{
-        width: 90%!important;
-        margin: 2rem 0rem;
-    }
-    .rating-contents .rating{
-        width: 100%;
-    }
-    .five-s{
-        margin: 0rem 1.5rem;
-    }
-
-    /* ######## bg-color ############ */
-    .bg-color{
-        height: fit-content!important;
-    }
-
-    .bg-color .text-img {
-        margin: auto;
-        padding: 5em 0em!important;
-    }
-    .text-img .heading{
-        margin: 0rem auto 3rem auto;
-    }
-    .heading h2{
-        font-size: 2.3rem;
-    }
-
-    .text-img p{
-        bottom: 30%;
-    }
-
-    /* ######## ClientList ######### */
-    .ClientList{
-        height: fit-content!important;
-    }
-    .ClientList .email-box{
-        width: 45%!important;
-    }
-
-
-
-    .divider-shape{
-        height: fit-content!important;
-    }
-
-    .custom-shape-divider-top-1679998476{
-        position: static!important;
-    }
-
-    .footer-section{
-        height: fit-content;
-    }
-
-    .footer-section .email-box{
-        width: 40%!important;
-    }
-}
-
