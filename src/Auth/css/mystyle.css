@@ -191,7 +191,6 @@ body{
     width: 100%;
     border-radius: 2rem;
 }
-
 .text-para{
     width: 100%;
     height: fit-content;
@@ -606,7 +605,7 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
     }
 
     .logo-box .logo{
-        margin: 3rem 0rem 2rem 6rem;
+        margin: 2rem 0rem 2rem 3rem;
     }
     .rating-contents{
         width: 100%;
@@ -949,3 +948,73 @@ background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
         width: 50%!important;
     }
 }
+
+/* @media screen and (min-width: 1201px){
+    .main-contents{
+        height: fit-content
+    }
+    .content{
+        height: fit-content;
+    }
+    .logo-box::after{
+        top: 150px!important;
+    }
+    .rating-contents{
+        width: 90%;
+        margin: auto;
+    }
+    .email-box{
+        width: 90%!important;
+        margin: 2rem 0rem;
+    }
+    .rating-contents .rating{
+        width: 100%;
+    }
+    .five-s{
+        margin: 0rem 1.5rem;
+    }
+
+    .bg-color{
+        height: fit-content!important;
+    }
+
+    .bg-color .text-img {
+        margin: auto;
+        padding: 5em 0em!important;
+    }
+    .text-img .heading{
+        margin: 0rem auto 3rem auto;
+    }
+    .heading h2{
+        font-size: 2.3rem;
+    }
+
+    .text-img p{
+        bottom: 30%;
+    }
+
+    .ClientList{
+        height: fit-content!important;
+    }
+    .ClientList .email-box{
+        width: 45%!important;
+    }
+
+
+
+    .divider-shape{
+        height: fit-content!important;
+    }
+
+    .custom-shape-divider-top-1679998476{
+        position: static!important;
+    }
+
+    .footer-section{
+        height: fit-content;
+    }
+
+    .footer-section .email-box{
+        width: 40%!important;
+    }
+} */
